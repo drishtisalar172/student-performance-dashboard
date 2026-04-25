@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>📊 Student Performance Dashboard</h2>
+
+    <div class="form">
+        <input id="name" placeholder="Enter Name">
+        <input id="marks" placeholder="Enter Marks">
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <input id="search" placeholder="🔍 Search student..." onkeyup="searchStudent()">
+
+    <div class="cards">
+        <div class="card avg" id="avgCard">Average</div>
+        <div class="card topper" id="topperCard">Topper</div>
+        <div class="card total" id="totalCard">Total</div>
+    </div>
+
+    <h3>Student List</h3>
+    <ul id="list"></ul>
+
+    <h3>Performance Chart</h3>
+    <canvas id="chart"></canvas>
+
+    <h3>Performance Distribution</h3>
+    <canvas id="pieChart"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
